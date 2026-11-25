@@ -1,0 +1,6 @@
+image_manifest_digest=sha256:ca33330e63d5c3c78bd55d868082d337998acd71b37b6c6a80eda458a53a7d6c
+config_digest=sha256:202989fca6ddd63eb695d82a6e98dba2832888e5ab72a308bb496fa232cadc58
+tag=readystack/grafana:v13.3.1-CE-ubuntu24.04-r3
+probe_port=3000
+probe_path=/api/health
+probe_timeout=180

@@ -1,0 +1,9 @@
+{
+  "schema": "kitforge.source_tree_hash.v1",
+  "slug": "grafana",
+  "repo": "https://github.com/grafana/grafana",
+  "ref": "v13.3.1",
+  "commit": "5db6ba887630c7fa12e5bfd063f2fa854025468c",
+  "tree_listing_sha256": "ebc4917037d7fdc9a713db1a8912b58cad8403cc0c9eafc8a81ad3366640c602",
+  "file_count": 24130
+}
