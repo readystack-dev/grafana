@@ -2,8 +2,8 @@
   "schema": "kitforge.custody_inputs.v1",
   "slug": "grafana",
   "repo": "https://github.com/grafana/grafana",
-  "ref": "v13.3.1",
-  "commit": "5db6ba887630c7fa12e5bfd063f2fa854025468c",
+  "ref": "v13.3.2",
+  "commit": "b8e90ef2a99c8629339e7233a7a813456d87c075",
   "edition": "CE",
   "ce_audit": {
     "ce_only": true,

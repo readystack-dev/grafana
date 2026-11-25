@@ -34,7 +34,7 @@
     }
   ],
   "build_method": "source-rebuild-go",
-  "chain_id": 1138,
+  "chain_id": 1214,
   "dep_bumps": [
     {
       "module": "github.com/apache/thrift",
@@ -110,14 +110,14 @@
   "slug": "grafana",
   "source": {
     "builder_image": "golang:1.27.4-bookworm",
-    "commit": "5db6ba887630c7fa12e5bfd063f2fa854025468c",
-    "commit_epoch": 1794346235,
+    "commit": "b8e90ef2a99c8629339e7233a7a813456d87c075",
+    "commit_epoch": 1795543051,
     "go_version_required": "1.27.3",
-    "ref": "v13.3.1",
+    "ref": "v13.3.2",
     "repo": "https://github.com/grafana/grafana",
-    "source_date_epoch": 1795161055,
+    "source_date_epoch": 1795544548,
     "source_date_epoch_basis": "release-cut",
-    "source_date_epoch_provenance": "the time release v13.3.1-CE-ubuntu24.04-r3 was cut (2026-11-20T07:50:55Z), by scripts/retarget.py --rev-bump: ReadyStack dates an image by when its release was packaged (owner 2026-11-10), recorded here once and used by every rebuild of the release; it builds upstream commit 5db6ba887630, dated 2026-11-10T21:30:35Z (source.commit_epoch).",
+    "source_date_epoch_provenance": "the time release v13.3.2-CE-ubuntu24.04-r1 was cut (2026-11-24T18:22:28Z), by scripts/retarget.py: ReadyStack dates an image by when its release was packaged (owner 2026-11-10), recorded here once and used by every rebuild of the release; it builds upstream commit b8e90ef2a99c, dated 2026-11-24T17:57:31Z (source.commit_epoch).",
     "vendor_build": {
       "cmds": [
         "corepack enable",
@@ -135,5 +135,5 @@
       ]
     }
   },
-  "version": "v13.3.1"
+  "version": "v13.3.2"
 }

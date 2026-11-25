@@ -21,8 +21,8 @@
     "context": ".",
     "dockerfile": "Dockerfile.offline.pinned",
     "mtime_policy": "clamp",
-    "source_date_epoch": 1795161055,
-    "tree_hash": "sha256:0ea21451496c171702f1351bd27825237c27ad5728ef49291c29a287188862c2"
+    "source_date_epoch": 1795544548,
+    "tree_hash": "sha256:a7bc40460fdd3679453a045f88d7577665618c2afda9bb864ba3c59a402a59d8"
   },
   "probe": {
     "http_path": "/api/health",
@@ -31,8 +31,8 @@
   },
   "schema": "readystack-rebuild-bundle/v0.1",
   "subject": {
-    "config_digest": "sha256:202989fca6ddd63eb695d82a6e98dba2832888e5ab72a308bb496fa232cadc58",
-    "image_manifest_digest": "sha256:ca33330e63d5c3c78bd55d868082d337998acd71b37b6c6a80eda458a53a7d6c",
-    "name": "docker.io/readystack/grafana:v13.3.1-CE-ubuntu24.04-r3"
+    "config_digest": "sha256:39c834f69bbb67b70582fec6c31d1b911cf811d475e22bad49b1e2c6f6426eb4",
+    "image_manifest_digest": "sha256:a74d314bb2162d39f356730b6fb60ee2d6e20adb340280bc113bf0600f2fa121",
+    "name": "docker.io/readystack/grafana:v13.3.2-CE-ubuntu24.04-r1"
   }
 }

@@ -1,6 +1,6 @@
-image_manifest_digest=sha256:ca33330e63d5c3c78bd55d868082d337998acd71b37b6c6a80eda458a53a7d6c
-config_digest=sha256:202989fca6ddd63eb695d82a6e98dba2832888e5ab72a308bb496fa232cadc58
-tag=readystack/grafana:v13.3.1-CE-ubuntu24.04-r3
+image_manifest_digest=sha256:a74d314bb2162d39f356730b6fb60ee2d6e20adb340280bc113bf0600f2fa121
+config_digest=sha256:39c834f69bbb67b70582fec6c31d1b911cf811d475e22bad49b1e2c6f6426eb4
+tag=readystack/grafana:v13.3.2-CE-ubuntu24.04-r1
 probe_port=3000
 probe_path=/api/health
 probe_timeout=180

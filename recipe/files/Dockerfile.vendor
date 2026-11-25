@@ -5,7 +5,7 @@ FROM golang:1.27.4-bookworm@sha256:4fa7c968ba93f1635670522dbb01a2c78150443e13857
 RUN apt-get update && apt-get install -y --no-install-recommends git ca-certificates curl gnupg make && \
     curl -fsSL --retry 5 -o /tmp/node-v24.22.3-linux-x64.tar.gz https://nodejs.org/dist/v24.22.3/node-v24.22.3-linux-x64.tar.gz && echo '061ec3e3062115705b56b51fa9cc330ab50d34b6969387d4e4b1a50c6809acc2  /tmp/node-v24.22.3-linux-x64.tar.gz' | sha256sum -c - && tar -xzf /tmp/node-v24.22.3-linux-x64.tar.gz -C /usr/local --strip-components 1 --no-same-owner && rm /tmp/node-v24.22.3-linux-x64.tar.gz && node --version && rm -rf /var/lib/apt/lists/*
 WORKDIR /src
-RUN git clone --depth 1 --branch v13.3.1 -q https://github.com/grafana/grafana . && test "$(git rev-parse HEAD)" = 5db6ba887630c7fa12e5bfd063f2fa854025468c
+RUN git clone --depth 1 --branch v13.3.2 -q https://github.com/grafana/grafana . && test "$(git rev-parse HEAD)" = b8e90ef2a99c8629339e7233a7a813456d87c075
 RUN corepack enable && \
     YARN_ENABLE_PROGRESS_BARS=false yarn install --immutable && \
     NODE_OPTIONS=--max-old-space-size=6144 yarn run build && \

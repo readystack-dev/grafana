@@ -1,11 +1,11 @@
 {
   "schema": "kitforge.build_recipe.v1",
   "slug": "grafana",
-  "image": "readystack/grafana:v13.3.1-CE-ubuntu24.04-r3",
+  "image": "readystack/grafana:v13.3.2-CE-ubuntu24.04-r1",
   "build_method": "source-rebuild-go",
   "source": {
     "repo": "https://github.com/grafana/grafana",
-    "ref": "v13.3.1",
+    "ref": "v13.3.2",
     "builder_image": "golang:1.27.4-bookworm",
     "go_version_required": "1.27.3",
     "_version_note": "v13.0.2 is the LATEST grafana GA (gh api repos/grafana/grafana/releases/latest => v13.0.2, published 2026-06-09, prerelease=false; queue-latest-version policy). go.mod directive is `go 1.26.3`; builder is golang:1.26-bookworm with GOTOOLCHAIN=local (set by render_l009_kit) so the current 1.26 toolchain compiles, never a stale go.mod-pinned toolchain \u2014 building against the newer Go stdlib is the dominant stale-stdlib-in-binary CVE remediation. IMPORTANT VERSION-STAMP DETAIL: the ldflags var is `main.version` (pkg/cmd/grafana/main.go, default '9.2.0'), and the Makefile derives BUILD_VERSION from package.json's `version` field which is the BARE `13.0.2` (NO `v` prefix). So the stamp is -X main.version=13.0.2 (bare), and `grafana --version` / `grafana server -v` prints `grafana version 13.0.2`. The --depth-1 vendored tree has no git tag, but the version is package.json-derived not git-derived, so the bare stamp is exact. VERIFIED LIVE on <redacted: internal host>: `grafana version 13.0.2` (golang:1.26-bookworm, exit 0). | 2026-10-27 (retarget v13.3.0): v13.3.0's go.mod directive is `go 1.27.3`, so the builder moves to golang:1.27.3-bookworm (the toolchain follows upstream's go directive; GOTOOLCHAIN=local cannot build a newer directive). Its .nvmrc is v24.22.1 and package.json engines stay `>= 22 <25`, so node_version 24 is unchanged; corepack takes yarn from packageManager (yarn@4.18.1).",
@@ -26,11 +26,11 @@
         "sha256": "061ec3e3062115705b56b51fa9cc330ab50d34b6969387d4e4b1a50c6809acc2"
       }
     },
-    "source_date_epoch": 1795161055,
-    "source_date_epoch_provenance": "the time release v13.3.1-CE-ubuntu24.04-r3 was cut (2026-11-20T07:50:55Z), by scripts/retarget.py --rev-bump: ReadyStack dates an image by when its release was packaged (owner 2026-11-10), recorded here once and used by every rebuild of the release; it builds upstream commit 5db6ba887630, dated 2026-11-10T21:30:35Z (source.commit_epoch).",
-    "commit": "5db6ba887630c7fa12e5bfd063f2fa854025468c",
+    "source_date_epoch": 1795544548,
+    "source_date_epoch_provenance": "the time release v13.3.2-CE-ubuntu24.04-r1 was cut (2026-11-24T18:22:28Z), by scripts/retarget.py: ReadyStack dates an image by when its release was packaged (owner 2026-11-10), recorded here once and used by every rebuild of the release; it builds upstream commit b8e90ef2a99c, dated 2026-11-24T17:57:31Z (source.commit_epoch).",
+    "commit": "b8e90ef2a99c8629339e7233a7a813456d87c075",
     "source_date_epoch_basis": "release-cut",
-    "commit_epoch": 1794346235
+    "commit_epoch": 1795543051
   },
   "binaries_from_source": [
     {
